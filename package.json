@@ -1,0 +1,24 @@
+{
+  "name": "extreme",
+  "version": "1.0.0",
+  "description": "Extreme level",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deltverden/extreme.git"
+  },
+  "author": "deltverden",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/deltverden/extreme/issues"
+  },
+  "homepage": "https://github.com/deltverden/extreme#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp-sass": "^4.1.0",
+    "node-sass": "^4.14.1"
+  }
+}
