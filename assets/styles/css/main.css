@@ -10,11 +10,11 @@
   text-decoration: none;
   transition: .2s; }
 
-.main .about-us .about-info .container .about-info-block .info .title, .main .about-us .about-choose .container .left-block .title, .main .products .container .products-head .title, .main .work .container .our-work .work-head .title {
+.main .about-us .about-info .container .about-info-block .block-info .info-title, .main .about-us .about-choose .container .left-block .title, .main .products .container .products-head .title, .main .work .container .our-work .work-head .title, .main .services .container .services-head .title {
   color: #515769;
   font-size: 32px; }
 
-.main .about-us .about-info .container .about-info-block .info .description, .main .about-us .about-choose .container .left-block .description, .main .products .container .products-head .description, .main .products .container .products-body .block .description, .main .pricing .container .price-block .description, .main .work .container .our-work .work-head .description {
+.main .about-us .about-info .container .about-info-block .block-info .info-description, .main .about-us .about-choose .container .left-block .description, .main .products .container .products-head .description, .main .products .container .products-body .products-block .block-description, .main .pricing .container .price-block .block-description, .main .work .container .our-work .work-head .description, .main .services .container .services-head .description, .main .services .container .services-body .services-block .block-description, .main .contacts .container .contacts-block .block-description {
   color: rgba(81, 87, 105, 0.5); }
 
 body {
@@ -113,11 +113,11 @@ body {
         .main .about-us .about-info .container .about-info-block:nth-child(2n) .image {
           margin-top: 0;
           margin-bottom: 50px; }
-      .main .about-us .about-info .container .about-info-block .image {
+      .main .about-us .about-info .container .about-info-block .block-image {
         width: 100%;
         height: 350px;
         margin-top: 50px; }
-        .main .about-us .about-info .container .about-info-block .image img {
+        .main .about-us .about-info .container .about-info-block .block-image img {
           width: 100%;
           height: 100%; }
   .main .about-us .about-choose {
@@ -189,7 +189,7 @@ body {
       display: flex;
       justify-content: space-between;
       align-items: center; }
-      .main .products .container .products-body .block {
+      .main .products .container .products-body .products-block {
         width: 32%;
         height: 100%; }
 
@@ -203,38 +203,38 @@ body {
       color: #81848f; } }
   to {
     color: #bfc1c7; } }
-        .main .products .container .products-body .block .image {
+        .main .products .container .products-body .products-block .block-image {
           width: 100%;
           height: 100%; }
-          .main .products .container .products-body .block .image img {
+          .main .products .container .products-body .products-block .block-image img {
             width: 100%;
             height: 100%; }
-        .main .products .container .products-body .block .title {
+        .main .products .container .products-body .products-block .block-title {
           color: #515769;
-          font-size: 24px;
+          font-size: 22px;
           margin-top: 10px; }
-          .main .products .container .products-body .block .title::after {
+          .main .products .container .products-body .products-block .block-title::after {
             content: 'Management';
             color: rgba(0, 0, 0, 0.3);
-            font-size: 18px;
+            font-size: 14px;
             text-transform: uppercase;
             font-weight: 300;
             margin-left: 30px; }
-          .main .products .container .products-body .block .title.title2::after {
+          .main .products .container .products-body .products-block .block-title.title2::after {
             content: 'Development'; }
-          .main .products .container .products-body .block .title.title3::after {
+          .main .products .container .products-body .products-block .block-title.title3::after {
             content: 'Design'; }
-          .main .products .container .products-body .block .title:hover {
+          .main .products .container .products-body .products-block .block-title:hover {
             cursor: default; }
-        .main .products .container .products-body .block .description {
+        .main .products .container .products-body .products-block .block-description {
           margin: 10px 0; }
-        .main .products .container .products-body .block .read-link {
+        .main .products .container .products-body .products-block .read-link {
           text-decoration: none;
           text-transform: uppercase;
           color: #81848f;
           font-size: 14px;
           font-weight: 600; }
-          .main .products .container .products-body .block .read-link::after {
+          .main .products .container .products-body .products-block .read-link::after {
             content: '';
             display: inline-block;
             margin-left: 5px;
@@ -242,7 +242,7 @@ body {
             width: 10px;
             height: 2px;
             background: #17bed2; }
-        .main .products .container .products-body .block:hover .title, .main .products .container .products-body .block:hover .description, .main .products .container .products-body .block:hover .read-link {
+        .main .products .container .products-body .products-block:hover .title, .main .products .container .products-body .products-block:hover .description, .main .products .container .products-body .products-block:hover .read-link {
           animation: colors .3s forwards; }
   .main .pricing {
     background: #fafafa; }
@@ -260,18 +260,18 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: flex-start; }
-        .main .pricing .container .price-block .image {
+        .main .pricing .container .price-block .block-image {
           width: 50px;
           height: 50px;
           margin-bottom: 20px; }
-        .main .pricing .container .price-block .title {
+        .main .pricing .container .price-block .block-title {
           color: #515769;
           font-size: 22px; }
-          .main .pricing .container .price-block .title span {
+          .main .pricing .container .price-block .block-title span {
             font-size: 16px;
             font-weight: 400;
             color: #bfc1c7; }
-        .main .pricing .container .price-block .description {
+        .main .pricing .container .price-block .block-description {
           margin: 20px 0; }
         .main .pricing .container .price-block .features {
           margin: 20px 0; }
@@ -309,7 +309,7 @@ body {
       height: 1px;
       background: rgba(0, 0, 0, 0.1); }
     .main .work .container {
-      padding: 100px 0; }
+      padding: 70px 0; }
       .main .work .container .our-work {
         display: flex;
         flex-direction: column;
@@ -351,3 +351,86 @@ body {
         .main .work .container .our-clients .client-brand {
           width: 15%;
           height: 100%; }
+  .main .services {
+    background: #fafafa; }
+    .main .services .container {
+      padding: 100px 0; }
+      .main .services .container .services-head {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        margin-bottom: 50px; }
+        .main .services .container .services-head .title {
+          margin-bottom: 20px; }
+        .main .services .container .services-head .description {
+          max-width: 50%; }
+      .main .services .container .services-body {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap; }
+        .main .services .container .services-body .services-block {
+          background: #fff;
+          width: 387px;
+          margin: 1px 0;
+          box-sizing: border-box;
+          padding: 40px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start; }
+
+@keyframes disp {
+  from {
+    .block-image {
+      display: block; } }
+  to {
+    .block-image {
+      display: none; } } }
+          .main .services .container .services-body .services-block.block2 {
+            background: #17bed2; }
+            .main .services .container .services-body .services-block.block2 .block-title, .main .services .container .services-body .services-block.block2 .block-description {
+              color: #fff; }
+          .main .services .container .services-body .services-block .block-image {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 20px; }
+          .main .services .container .services-body .services-block .block-title {
+            color: #515769;
+            font-size: 22px;
+            margin: 0 0 20px; }
+          .main .services .container .services-body .services-block:hover .block-image {
+            animation: disp .3s; }
+  .main .contacts .container {
+    padding: 70px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .main .contacts .container .contacts-block {
+      width: 32%; }
+      .main .contacts .container .contacts-block .block-title {
+        color: #515769;
+        font-size: 22px;
+        margin: 0 0 20px; }
+        .main .contacts .container .contacts-block .block-title::after {
+          content: 'Management';
+          color: rgba(0, 0, 0, 0.3);
+          font-size: 14px;
+          text-transform: uppercase;
+          font-weight: 300;
+          margin-left: 30px; }
+        .main .contacts .container .contacts-block .block-title.title2::after {
+          content: 'Operation'; }
+        .main .contacts .container .contacts-block .block-title.title3::after {
+          content: 'Finance'; }
+      .main .contacts .container .contacts-block .block-description {
+        margin-bottom: 20px; }
+      .main .contacts .container .contacts-block .block-phone, .main .contacts .container .contacts-block .block-email {
+        font-size: 14px;
+        color: #81848f;
+        font-weight: 500; }
+        .main .contacts .container .contacts-block .block-phone img, .main .contacts .container .contacts-block .block-email img {
+          margin-right: 10px; }
+  .main .map iframe {
+    width: 100%;
+    height: 300px; }

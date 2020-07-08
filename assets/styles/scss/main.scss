@@ -164,17 +164,17 @@ body {
                         }
                     }
     
-                    .info {
-                        .title {
+                    .block-info {
+                        .info-title {
                             @extend %titles;
                         }
     
-                        .description {
+                        .info-description {
                             @extend %descriptions;
                         }
                     }
     
-                    .image {
+                    .block-image {
                         width: 100%;
                         height: 350px;
                         margin-top: 50px;
@@ -306,7 +306,7 @@ body {
                 justify-content: space-between;
                 align-items: center;
 
-                .block {
+                .products-block {
                     width: 32%;
                     height: 100%;
 
@@ -330,7 +330,7 @@ body {
                         }
                     }
 
-                    .image {
+                    .block-image {
                         width: 100%;
                         height: 100%;
 
@@ -340,15 +340,15 @@ body {
                         }
                     }
 
-                    .title {
+                    .block-title {
                         color: $black;
-                        font-size: 24px;
+                        font-size: 22px;
                         margin-top: 10px;
 
                         &::after {
                             content: 'Management';
                             color: rgba(0, 0, 0, 0.3);
-                            font-size: 18px;
+                            font-size: 14px;
                             text-transform: uppercase;
                             font-weight: 300;
                             margin-left: 30px;
@@ -371,7 +371,7 @@ body {
                         }
                     }
 
-                    .description {
+                    .block-description {
                         @extend %descriptions;
                         margin: 10px 0;
                     }
@@ -423,13 +423,13 @@ body {
                 justify-content: center;
                 align-items: flex-start;
 
-                .image {
+                .block-image {
                     width: 50px;
                     height: 50px;
                     margin-bottom: 20px;
                 }
 
-                .title {
+                .block-title {
                     color: $black;
                     font-size: 22px;
 
@@ -440,7 +440,7 @@ body {
                     }
                 }
 
-                .description {
+                .block-description {
                     @extend %descriptions;
                     margin: 20px 0;
                 }
@@ -501,7 +501,7 @@ body {
         }
 
         .container {
-            padding: 100px 0;
+            padding: 70px 0;
 
             .our-work {
                 display: flex;
@@ -569,6 +569,157 @@ body {
                     height: 100%;
                 }
             }
+        }
+    }
+
+    .services {
+        background: #fafafa;
+
+        .container {
+            padding: 100px 0;
+
+            .services-head {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+
+                .title {
+                    @extend %titles;
+                    margin-bottom: 20px;
+                }
+
+                .description {
+                    @extend %descriptions;
+                    max-width: 50%;
+                }
+
+                margin-bottom: 50px;
+            }
+
+            .services-body {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+
+                .services-block {
+                    background: #fff;
+                    width: 387px;
+                    margin: 1px 0;
+                    box-sizing: border-box;
+                    padding: 40px;
+
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: flex-start;
+
+                    @keyframes disp {
+                        from {
+                            .block-image {
+                                display: block;
+                            }
+                        }
+                        to {
+                            .block-image {
+                                display: none;
+                            }
+                        }
+                    }
+
+                    &.block2 {
+                        background: #17bed2;
+                        
+                        .block-title, .block-description {
+                            color: #fff;
+                        }
+                    }
+
+                    .block-image {
+                        width: 50px;
+                        height: 50px;
+                        margin-bottom: 20px;
+                    }
+
+                    .block-title {
+                        color: $black;
+                        font-size: 22px;
+                        margin: 0 0 20px;
+                    }
+
+                    .block-description {
+                        @extend %descriptions;
+                    }
+
+                    &:hover {
+                        .block-image {
+                            animation: disp .3s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .contacts {
+        .container {
+            padding: 70px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .contacts-block {
+                width: 32%;
+
+                .block-title {
+                    color: $black;
+                    font-size: 22px;
+                    margin: 0 0 20px;
+
+                    &::after {
+                        content: 'Management';
+                        color: rgba(0, 0, 0, 0.3);
+                        font-size: 14px;
+                        text-transform: uppercase;
+                        font-weight: 300;
+                        margin-left: 30px;
+                    }
+
+                    &.title2 {
+                        &::after {
+                            content: 'Operation';
+                        }
+                    }
+
+                    &.title3 {
+                        &::after {
+                            content: 'Finance';
+                        }
+                    }
+                }
+
+                .block-description {
+                    @extend %descriptions;
+                    margin-bottom: 20px;
+                }
+
+                .block-phone, .block-email {
+                    font-size: 14px;
+                    color: #81848f;
+                    font-weight: 500;
+
+                    img {
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    .map {
+        iframe {
+            width: 100%;
+            height: 300px;
         }
     }
 }
