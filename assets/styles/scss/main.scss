@@ -723,3 +723,45 @@ body {
         }
     }
 }
+
+.footer {
+    .container {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 70px 0;
+
+        .footer-block {
+            margin-right: 130px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            .footer-navigation {
+                .menu {
+                    .nav-item {
+                        list-style: none;
+                        margin-bottom: 10px;
+
+                        &:last-child {
+                            margin-right: 0;
+                        }
+
+                        a {
+                            color: #515769;
+                            font-weight: 500;
+                            font-size: 16px;
+                            text-decoration: none;
+                            transition: .2s;
+
+                            &:hover {
+                                color: rgba(81, 87, 105, 0.4);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
