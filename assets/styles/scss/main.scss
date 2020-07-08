@@ -31,9 +31,15 @@ body {
 }
 
 .container {
-    width: 1165px;
+    width: 65%;
     height: 100%;
     margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+    .map {
+        display: none;
+    }
 }
 
 .header {
@@ -604,8 +610,8 @@ body {
 
                 .services-block {
                     background: #fff;
-                    width: 387px;
-                    margin: 1px 0;
+                    width: 33%;
+                    margin: 3px 0;
                     box-sizing: border-box;
                     padding: 40px;
 
@@ -613,19 +619,6 @@ body {
                     flex-direction: column;
                     justify-content: center;
                     align-items: flex-start;
-
-                    @keyframes disp {
-                        from {
-                            .block-image {
-                                display: block;
-                            }
-                        }
-                        to {
-                            .block-image {
-                                display: none;
-                            }
-                        }
-                    }
 
                     &.block2 {
                         background: #17bed2;
@@ -639,6 +632,7 @@ body {
                         width: 50px;
                         height: 50px;
                         margin-bottom: 20px;
+                        transition: .3s;
                     }
 
                     .block-title {
@@ -653,7 +647,8 @@ body {
 
                     &:hover {
                         .block-image {
-                            animation: disp .3s;
+                            opacity: 0;
+                            height: 0;
                         }
                     }
                 }
